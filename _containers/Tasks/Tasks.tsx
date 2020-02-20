@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import { CreateTaskButton } from "./CreateTaskButton";
-import { CreateTaskDialog } from "./CreateTaskDialog";
 import {
   CreateTaskDialogContext,
   CreateTaskDialogContextInterface
@@ -19,7 +18,6 @@ export const Tasks = () => {
   return (
     <CreateTaskDialogContext.Provider value={createTaskDialogValue}>
       <CreateTaskButton />
-      <CreateTaskDialog/>
     </CreateTaskDialogContext.Provider>
   );
 };
